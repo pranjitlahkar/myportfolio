@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@600&family=Montserrat:wght@700&family=Playfair+Display:wght@700&family=Work+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainc {
+    overflow: hidden;
+}
+
+.aboutimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutcont {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #D8B5FF, #1EAE98);
+    padding: 10%;
+    position: relative;
+
+}
+
+.aboutimg {
+    max-height: 600px;
+    max-width: 50%;
+    margin-left: auto;
+    box-shadow: 1.5rem 1.5rem 0px 0px #7cff01;
+}
+
+.aboutpara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+
+}
+
+.aboutpara p {
+    font-family: 'Dosis', sans-serif;
+    margin: auto;
+}
+
+.aboutcont::before {
+    content: "DESIGN";
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbff02f5;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    background-color: transparent;
+    border-left: 2px solid #fbff02f5;
+    border-bottom: 1px solid #fbff02f5;
+    top: 5%;
+    left: 5%;
+    font-family: 'Anton', sans-serif;
+    opacity: 50%;
+
+}
+
+.aboutcont::after {
+    content: "DEVELOPE";
+    font-size: 2rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: #fbff02f5;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    background-color: transparent;
+    border-top: 2px solid #fbff02f5;
+    border-right: 1px solid #fbff02f5;
+    left: 30%;
+    bottom: 5%;
+    opacity: 45%;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.texts {
+
+    background: rgba(8, 123, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    padding: 1rem;
+}
+
+.texts::after {
+    content: "DEPLOY";
+    font-size: 2rem;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: #fbff02f5;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    background-color: transparent;
+    border-bottom: 2px solid #fbff02f5;
+    border-right: 1px solid #fbff02f5;
+    top: 40%;
+    left: 110%;
+    font-family: 'Anton', sans-serif;
+    opacity: 60%;
+
+}
+
+.contspan a {
+    color: #fbff02f5;
+}
+
+.contspan a:hover {
+    color: #7cff01;
+}
+
+@media only screen and (max-width:700px) {
+    .aboutcont {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutpara {
+        width: 100%;
+    }
+
+    .aboutimg {
+        max-width: 65%;
+    }
+    .texts::after{
+       display: none;
+    }
+    .aboutcont::after{
+        display: none;
+    }
+    .aboutcont::before{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+
+    .aboutcont {
+        height: 95vh;
+
+    }
+}

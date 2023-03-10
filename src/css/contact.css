@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Playfair+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contactform {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    
+    
+}
+.mc{
+    overflow: hidden;
+}
+.formbox{
+    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    
+    
+    
+}
+.contimg{
+    max-width: 400px;
+    max-height: 400px;
+}
+.contimg img{
+   height: 100%;
+   width: 100%;
+   filter: drop-shadow(30px 10px 4px #00000074);
+    object-fit: cover;
+}
+.frmpr{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.frmpr p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+}
+.inputs input{
+    line-height: 2rem;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.3rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #be3455;
+}
+.submitbtn{
+    margin-top:0.5rem ;
+    margin-left: 0.5rem;
+    line-height: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.formmain h2,h3{
+    font-family: 'Dosis', sans-serif;
+}
+.container{
+    overflow: hidden;
+    caret-color: #be3455;
+    background: linear-gradient(45deg , #edcdc2 , #be3455);
+    
+}
+.follow{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 10%;
+
+}
+.icondiv{
+    height: 100px;
+    width: 100px;
+    background-color: #be3455;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.icondiv i{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.followhead{
+margin-left: 10%;
+font-family: 'Montserrat', sans-serif;
+margin-bottom: 1rem;
+
+}
+@media only screen and (max-width:700px) {
+
+
+    .formbox{
+        flex-direction: column;
+    }
+    .followhead{
+        margin-top: 2rem;
+    }
+    .icondiv{
+        max-height: 70px;
+        max-width: 70px;
+       
+    }
+    .icondiv i{
+        font-size: 1.5rem;
+    }
+    
+}
+@media only screen and (min-width:700px) {
+
+    .container{
+        height: 95vh;
+    }
+}
+.callemail{
+    margin-left: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background: linear-gradient(45deg ,  #252525, #000000);
+}
+.contbuttoncont{
+   display: flex;
+   gap: 1rem;
+  justify-content: space-between;
+   
+}
+.contbuttoncont a{
+    text-decoration: none;
+}
+
+
+.buttbox {
+    padding: 1rem;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    background-color: #252525;
+}
+.contpagebtn{
+    color: #ffffff;
+    line-height: 2rem;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+
+
+
+}
+.contpagebtn a{
+    color: #ffffff;
+    text-decoration: none;   
+}

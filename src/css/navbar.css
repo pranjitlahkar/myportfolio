@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:wght@700&family=Playfair+Display:wght@700&family=Work+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.navdiv {
+    background-color: #252525;
+
+
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 1rem;
+    align-content: center;
+}
+
+.navlist {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    border-bottom: 1px solid #be3455;
+    border-right: 1px solid #be3455;
+    border-radius: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+   
+}
+.icons a{
+    color: #ffffff;
+}
+
+.mylogo {
+    font-family: 'Playfair Display', serif;
+   
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.mylogo a{
+    text-decoration: none;
+    color: #be3455;
+}
+.navlist li {
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist li:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+   
+}
+.navitems a:hover{
+    color: #be3455;
+}
+
+.ham {
+    display: none;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media only screen and (max-width:700px) {
+    .icons {
+        display: none;
+    }
+
+    .navlist {
+
+        display: none;
+
+
+    }
+
+    .hide {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.5rem;
+        border-bottom: 1px solid #be3455;
+        border-right: 1px solid #be3455;
+        border-radius: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .ham {
+        font-size: 1.5rem;
+        display: block;
+        position: absolute;
+        top: 10;
+        right: 3%;
+        color: #ffffff;
+    }
+
+
+}
+

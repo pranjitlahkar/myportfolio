@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Playfair+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainc{
+    overflow: hidden;
+}
+.skillcontainer{
+    display: flex;
+   
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(45deg, #252525 ,#bfb092);
+}
+.skillcont{
+   
+}
+.skillicons{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 1rem;
+}
+.skillimage{
+    max-width: 400px;
+    max-height: 400px;
+}
+.skillimage img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(30px 10px 4px #00000074);
+    object-fit: cover;
+}
+.skillpara{
+
+    margin-top: 2rem;
+    max-width: 400px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.brandicons{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.icontitle{
+   align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+.brandicons i{
+    font-size: 2rem;
+}
+.fa-js{
+    color: #e0d71a;
+}
+.fa-html5{
+    color: #265fe4;
+}
+.fa-css3-alt{
+    color: #0084ff;
+}
+.fa-node-js{
+color: #16a500;
+}
+.fa-react{
+    color: #00f2ff;
+}
+.fa-bootstrap{
+    color: #78008a;
+    
+}
+.icbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.exp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.superdiv{
+    overflow: hidden;
+}
+@media only screen and (max-width:700px) {
+
+    .skillcontainer{
+        flex-direction: column;
+    }
+    .skillpara,.skillcont{
+        padding: 1rem;
+    }
+    
+}
+@media only screen and (min-width:700px) {
+
+    .skillcontainer{
+        height: 95vh;
+    }
+}
